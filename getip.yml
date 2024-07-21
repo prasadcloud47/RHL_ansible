@@ -1,6 +1,6 @@
 ---
 - name: Fact dump
-  hosts: web1
+  hosts: db1
   tasks:
     - name: Print all facts
       debug:
