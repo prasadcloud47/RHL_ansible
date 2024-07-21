@@ -1,6 +1,6 @@
 ---
 - name: Fact dump
-  hosts: all
+  hosts: web2
   tasks:
     - name: Print all facts
       debug:
