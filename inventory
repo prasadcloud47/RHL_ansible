@@ -1,4 +1,7 @@
 [webservers]
 web1 ansible_host=10.10.10.20
-#10.10.10.[21:30]
-#50.[50:52].50.[50:60]
+web2 ansible_host=10.10.10.21
+
+[dbservers]
+db1 ansible_host=10.10.10.50
+db2 ansible_host=10.10.10.51
