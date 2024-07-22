@@ -3,7 +3,7 @@
   hosts: web1
   tasks:
     - name: Email sending
-      community.general.email:
+      community.general.mail:
           host: mail.sltidc.lk
           port: 25
           username: csalerts@sltidc.lk
