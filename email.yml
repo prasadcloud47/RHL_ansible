@@ -3,7 +3,7 @@
   hosts: web1
   tasks:
     - name: Email sending
-      email:
+      community.general.email:
           host: mail.sltidc.lk
           port: 25
           username: csalerts@sltidc.lk
@@ -11,4 +11,5 @@
           to: csalerts@sltidc.lk
           subject: Ansible-report
           body: rat is been successfully provisioned.
+      delegate_to: localhost
 ...
