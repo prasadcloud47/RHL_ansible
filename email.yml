@@ -1,0 +1,14 @@
+---
+- name: email sent
+  hosts: web1
+  tasks:
+    - name: Email sending
+      email:
+          host: mail.sltidc.lk
+          port: 25
+          username: csalerts@sltidc.lk
+          password: 11,DiVERc,#
+          to: csalerts@sltidc.lk
+          subject: Ansible-report
+          body: rat is been successfully provisioned.
+...
