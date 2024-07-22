@@ -1,6 +1,7 @@
 ---
 - name: email sent
   hosts: web1
+  gather_facts: no
   tasks:
     - name: Email sending
       community.general.mail:
