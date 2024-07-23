@@ -1,6 +1,6 @@
 ---
 - name: email sent
-  hosts: web1
+  hosts: localhost
   gather_facts: no
   tasks:
     - name: Email sending
@@ -13,4 +13,5 @@
           to: csalerts@sltidc.lk
           subject: Ansible-report
           body: "rat is been successfully provisioned"
+      delegate_to: localhost
 ...
