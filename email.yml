@@ -1,6 +1,6 @@
 ---
 - name: email sent
-  hosts: localhost
+  hosts: web1
   gather_facts: no
   tasks:
     - name: Email sending
