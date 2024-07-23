@@ -13,5 +13,4 @@
           to: csalerts@sltidc.lk
           subject: Ansible-report
           body: rat is been successfully provisioned
-      delegate_to: localhost
 ...
