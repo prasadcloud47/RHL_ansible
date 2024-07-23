@@ -1,6 +1,6 @@
 ---
 - name: email sent
-  hosts: web1
+  hosts: localhost
   gather_facts: no
   tasks:
     - name: Email sending
@@ -8,10 +8,11 @@
           host: mail.sltidc.lk
           port: 25
           username: csalerts@sltidc.lk
-          password: 11,DiVERc,#
+          password: "11,DiVERc,#"
           sender: csalerts@sltidc.lk
           to: csalerts@sltidc.lk
           subject: Ansible-report
-          body: rat is been successfully provisioned.
+          body: rat is been successfully provisioned
+          secure: starttls
       delegate_to: localhost
 ...
