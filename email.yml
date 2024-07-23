@@ -13,6 +13,5 @@
           to: csalerts@sltidc.lk
           subject: Ansible-report
           body: rat is been successfully provisioned
-          secure: starttls
       delegate_to: localhost
 ...
